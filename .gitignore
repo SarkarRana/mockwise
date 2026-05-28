@@ -1,0 +1,37 @@
+# Node
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+.npmrc.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Env / secrets
+.env
+.env.local
+*.local
+
+# Cache directories created by mockwise itself
+.mockwise-cache/
+
+# Build artifacts
+*.log

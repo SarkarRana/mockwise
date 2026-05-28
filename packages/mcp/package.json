@@ -1,0 +1,48 @@
+{
+  "name": "@mockwise/mcp",
+  "version": "0.0.0",
+  "description": "MCP server for mockwise — generate test fixtures from Claude Code / Cursor.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "test",
+    "fixture",
+    "mock",
+    "zod",
+    "pydantic"
+  ],
+  "license": "MIT",
+  "author": "Rana Sarkar",
+  "type": "module",
+  "main": "./dist/server.js",
+  "bin": {
+    "mockwise-mcp": "./dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "mockwise": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

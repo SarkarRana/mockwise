@@ -1,0 +1,50 @@
+{
+  "name": "mockwise",
+  "version": "0.0.0",
+  "description": "Realistic, edge-case-aware test fixtures from your Zod schemas.",
+  "keywords": [
+    "zod",
+    "test",
+    "fixture",
+    "mock",
+    "ai",
+    "llm",
+    "testing"
+  ],
+  "license": "MIT",
+  "author": "Rana Sarkar",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src test",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "zod": "^3.23.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
